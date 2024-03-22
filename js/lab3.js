@@ -1,3 +1,4 @@
+// grab elements
 const tabpanels = document.querySelectorAll(`div[role="tabpanel"]`)
 const tabs = document.querySelectorAll(`.tabs ul li a`)
 
@@ -8,12 +9,10 @@ function handler() {
         if (href != panel.getAttribute("id"))
             panel.style.display = "none";
         else 
-            panel.style.display = "initial";
+            panel.style.display = "inline";
     })
 }
-
 
 tabs.forEach(tab => {
     tab.addEventListener('click', handler)
 });
-
