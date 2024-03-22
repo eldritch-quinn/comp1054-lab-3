@@ -20,6 +20,7 @@ p {
 	margin-top: 0;
 }
 div[role="tabpanel"] {
+	padding: 1rem;
 	outline: 1px #ccc solid;
 }
 div[role="tabpanel"]:not(:first-of-type) {

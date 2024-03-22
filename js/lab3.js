@@ -2,6 +2,8 @@
 const tabpanels = document.querySelectorAll(`div[role="tabpanel"]`)
 const tabs = document.querySelectorAll(`.tabs ul li a`)
 
+
+
 function handler() {
     tabpanels.forEach(panel => {
         let href = this.getAttribute("href").substring(1);
@@ -9,7 +11,7 @@ function handler() {
         if (href != panel.getAttribute("id"))
             panel.style.display = "none";
         else 
-            panel.style.display = "inline";
+            panel.style.display = "block";
     })
 }
 
