@@ -24,7 +24,6 @@ function handler() {
 
 // for each tab..
 tabs.forEach(tab => {
-
     // Add the handler function on click
     tab.addEventListener('click', handler)
 });
