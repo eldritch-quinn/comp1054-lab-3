@@ -21,7 +21,7 @@ p {
 }
 div[role="tabpanel"] {
 	padding: 1rem;
-	outline: 1px #ccc solid;
+	border: 1px solid #ccc;
 }
 div[role="tabpanel"]:not(:first-of-type) {
 	display: none;

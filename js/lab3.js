@@ -9,15 +9,14 @@ function handler() {
     tabpanels.forEach(panel => {
         // get href from click and remove hashtag
         let href = this.getAttribute("href").substring(1);
-        
+                
         // if the href matches the panel id..
         if (href != panel.getAttribute("id"))
-
             // hide panel
             panel.style.display = "none";
         
         // otherwise..
-        else 
+        else
             // show panel
             panel.style.display = "block";
     })
@@ -25,7 +24,7 @@ function handler() {
 
 // for each tab..
 tabs.forEach(tab => {
-    
+
     // Add the handler function on click
     tab.addEventListener('click', handler)
 });
